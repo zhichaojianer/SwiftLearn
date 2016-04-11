@@ -93,6 +93,9 @@
 			isa = PBXGroup;
 			children = (
 				A8F826A31CBB6FFB00B8C58E /* AppDelegate.swift */,
+				A8F826A51CBB6FFB00B8C58E /* ViewController.swift */,
+				A8F826A71CBB6FFB00B8C58E /* Main.storyboard */,
+				A8F826D91CBB70EF00B8C58E /* ImageLoader.swift */,
 				A8F826B51CBB702800B8C58E /* TestCollectionViewCell.swift */,
 				A8F826B61CBB702800B8C58E /* TestCollectionViewCell.xib */,
 				A8F826B71CBB702800B8C58E /* TestDynamicAdaptationCell.swift */,
@@ -104,7 +107,6 @@
 				A8F826BD1CBB702800B8C58E /* TestMainViewController.swift */,
 				A8F826BE1CBB702800B8C58E /* TestMainViewController.xib */,
 				A8F826BF1CBB702800B8C58E /* TestPerInfoTableViewCell.swift */,
-				A8F826D91CBB70EF00B8C58E /* ImageLoader.swift */,
 				A8F826C01CBB702800B8C58E /* TestPerInfoTableViewCell.xib */,
 				A8F826C11CBB702800B8C58E /* TestPerInfoViewController.swift */,
 				A8F826C21CBB702800B8C58E /* TestPerInfoViewController.xib */,
@@ -112,8 +114,6 @@
 				A8F826C41CBB702800B8C58E /* TestRootViewController.xib */,
 				A8F826C51CBB702800B8C58E /* TestWebViewController.swift */,
 				A8F826C61CBB702800B8C58E /* TestWebViewController.xib */,
-				A8F826A51CBB6FFB00B8C58E /* ViewController.swift */,
-				A8F826A71CBB6FFB00B8C58E /* Main.storyboard */,
 				A8F826AA1CBB6FFB00B8C58E /* Assets.xcassets */,
 				A8F826AC1CBB6FFB00B8C58E /* LaunchScreen.storyboard */,
 				A8F826AF1CBB6FFB00B8C58E /* Info.plist */,
@@ -360,6 +360,7 @@
 				A8F826B41CBB6FFB00B8C58E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
