@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TestDynamicAdaptationCell" customModule="SwiftLearnDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="215"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="214.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIV-h0-jwc">
+                        <rect key="frame" x="18" y="8" width="284" height="15.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="GpL-eC-ORF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="GpL-eC-ORF"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="class_page_bg_image" translatesAutoresizingMaskIntoConstraints="NO" id="n92-Hl-h8Z">
+                        <rect key="frame" x="18" y="28" width="120" height="63"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="1cX-Zs-jub"/>
+                            <constraint firstAttribute="height" constant="63" id="VcN-Vn-zMc"/>
+                        </constraints>
+                    </imageView>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="6lx-sp-LcU">
+                        <rect key="frame" x="18" y="101.5" width="206" height="105"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="206" id="8d4-op-3MR"/>
+                            <constraint firstAttribute="height" constant="105" id="dKY-g4-TZG"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="hwb-F3-8cz">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="n92-Hl-h8Z" firstAttribute="top" secondItem="MIV-h0-jwc" secondAttribute="bottom" constant="5" id="29n-0O-GFi"/>
+                    <constraint firstItem="MIV-h0-jwc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="2xb-At-GKh"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="MIV-h0-jwc" secondAttribute="trailing" constant="50" id="87j-eW-Wfi"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="MIV-h0-jwc" secondAttribute="trailing" constant="10" id="8Nd-3c-DdR"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="MIV-h0-jwc" secondAttribute="bottom" id="GeA-bc-UUH"/>
+                    <constraint firstItem="n92-Hl-h8Z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="OSl-Sc-gYd"/>
+                    <constraint firstItem="6lx-sp-LcU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="hhG-c2-Bfx"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="6lx-sp-LcU" secondAttribute="trailing" constant="10" id="kPs-Rr-HOP"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="n92-Hl-h8Z" secondAttribute="bottom" id="osH-O1-fnE"/>
+                    <constraint firstItem="MIV-h0-jwc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="spb-zG-EnL"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="6lx-sp-LcU" secondAttribute="trailing" constant="10" id="uRU-j8-tVV"/>
+                    <constraint firstItem="6lx-sp-LcU" firstAttribute="top" secondItem="n92-Hl-h8Z" secondAttribute="bottom" constant="10" id="ujR-uN-ryL"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="MIV-h0-jwc" secondAttribute="bottom" constant="6.5" id="wrW-lr-0WD"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="6lx-sp-LcU" secondAttribute="bottom" id="y0f-4i-UxA"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="87j-eW-Wfi"/>
+                        <exclude reference="GeA-bc-UUH"/>
+                        <exclude reference="wrW-lr-0WD"/>
+                        <exclude reference="osH-O1-fnE"/>
+                        <exclude reference="kPs-Rr-HOP"/>
+                        <exclude reference="uRU-j8-tVV"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ui_collectionHeightConstraint" destination="dKY-g4-TZG" id="CXS-vz-8vc"/>
+                <outlet property="ui_collectionView" destination="6lx-sp-LcU" id="ENG-0f-zJl"/>
+                <outlet property="ui_testLabel" destination="MIV-h0-jwc" id="E6S-KP-aOp"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="class_page_bg_image" width="375" height="211"/>
+    </resources>
+</document>
